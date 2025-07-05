@@ -1,0 +1,17 @@
+[
+    {
+        "repo_url": "demo_repo",
+        "commit_hash": "c_java_2",
+        "filepath": "file_java_2.java",
+        "before_code": "public class A { public void problematic() {} }",
+        "after_code": "public class A { public void clean() { System.out.println(\"ok\"); } }",
+        "language": "java",
+        "commit_message": "Refactor code",
+        "parsing_successful": true,
+        "before_ast_str": "...",
+        "after_ast_str": "...",
+        "code": "public class A { public void clean() { System.out.println(\"ok\"); } }",
+        "ast_str": "{\n    \"node_type\": \"CompilationUnit\",\n    \"imports\": [],\n    \"types\": [\n        {\n            \"node_type\": \"ClassDeclaration\",\n            \"modifiers\": [\n                \"public\"\n            ],\n            \"annotations\": [],\n            \"name\": \"A\",\n            \"body\": [\n                {\n                    \"node_type\": \"MethodDeclaration\",\n                    \"modifiers\": [\n                        \"public\"\n                    ],\n                    \"annotations\": [],\n                    \"name\": \"clean\",\n                    \"parameters\": [],\n                    \"body\": [\n                        {\n                            \"node_type\": \"StatementExpression\",\n                            \"expression\": {\n                                \"node_type\": \"MethodInvocation\",\n                                \"prefix_operators\": [],\n                                \"postfix_operators\": [],\n                                \"qualifier\": \"System.out\",\n                                \"selectors\": [],\n                                \"arguments\": [\n                                    {\n                                        \"node_type\": \"Literal\",\n                                        \"prefix_operators\": [],\n                                        \"postfix_operators\": [],\n                                        \"selectors\": [],\n                                        \"value\": \"\\\"ok\\\"\"\n                                    }\n                                ],\n                                \"member\": \"println\"\n                            }\n                        }\n                    ]\n                }\n            ]\n        }\n    ]\n}",
+        "label": 0
+    }
+]

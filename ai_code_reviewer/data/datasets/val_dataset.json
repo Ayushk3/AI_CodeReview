@@ -1,0 +1,17 @@
+[
+    {
+        "repo_url": "demo_repo",
+        "commit_hash": "c_java_2",
+        "filepath": "file_java_2.java",
+        "before_code": "class A { void problematic() {} }",
+        "after_code": "class A { void clean() { System.out.println(\"ok\"); } }",
+        "language": "java",
+        "commit_message": "Refactor code",
+        "parsing_successful": true,
+        "before_ast_str": "...",
+        "after_ast_str": "...",
+        "code": "class A { void clean() { System.out.println(\"ok\"); } }",
+        "ast_str": "CompilationUnit(imports=[], package=None, types=[ClassDeclaration(annotations=[], body=[MethodDeclaration(annotations=[], body=[StatementExpression(expression=MethodInvocation(arguments=[Literal(postfix_operators=[], prefix_operators=[], qualifier=None, selectors=[], value=\"ok\")], member=println, postfix_operators=[], prefix_operators=[], qualifier=System.out, selectors=[], type_arguments=None), label=None)], documentation=None, modifiers=set(), name=clean, parameters=[], return_type=None, throws=None, type_parameters=None)], documentation=None, extends=None, implements=None, modifiers=set(), name=A, type_parameters=None)])",
+        "label": 0
+    }
+]

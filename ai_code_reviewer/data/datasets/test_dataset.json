@@ -1,0 +1,32 @@
+[
+    {
+        "repo_url": "demo_repo",
+        "commit_hash": "c_py_1",
+        "filepath": "file_py_1.py",
+        "before_code": "def old_py(x):\n    return x - 1 #bug",
+        "after_code": "def new_py(x):\n    return x + 1",
+        "language": "python",
+        "commit_message": "Fix py logic",
+        "parsing_successful": true,
+        "before_ast_str": "...",
+        "after_ast_str": "...",
+        "code": "def old_py(x):\n    return x - 1 #bug",
+        "ast_str": "Module(\n    body=[\n        FunctionDef(\n            name='old_py',\n            args=arguments(\n                posonlyargs=[],\n                args=[\n                    arg(arg='x')],\n                kwonlyargs=[],\n                kw_defaults=[],\n                defaults=[]),\n            body=[\n                Return(\n                    value=BinOp(\n                        left=Name(id='x', ctx=Load()),\n                        op=Sub(),\n                        right=Constant(value=1)))],\n            decorator_list=[])],\n    type_ignores=[])",
+        "label": 1
+    },
+    {
+        "repo_url": "demo_repo",
+        "commit_hash": "c_java_2",
+        "filepath": "file_java_2.java",
+        "before_code": "class A { void problematic() {} }",
+        "after_code": "class A { void clean() { System.out.println(\"ok\"); } }",
+        "language": "java",
+        "commit_message": "Refactor code",
+        "parsing_successful": true,
+        "before_ast_str": "...",
+        "after_ast_str": "...",
+        "code": "class A { void problematic() {} }",
+        "ast_str": "CompilationUnit(imports=[], package=None, types=[ClassDeclaration(annotations=[], body=[MethodDeclaration(annotations=[], body=[], documentation=None, modifiers=set(), name=problematic, parameters=[], return_type=None, throws=None, type_parameters=None)], documentation=None, extends=None, implements=None, modifiers=set(), name=A, type_parameters=None)])",
+        "label": 1
+    }
+]
